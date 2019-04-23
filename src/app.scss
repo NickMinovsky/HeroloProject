@@ -56,7 +56,6 @@ input::placeholder {
 // CITY
 .city {
   width: 250px;
-  z-index: -1;
 }
 
 .city-data {
@@ -143,6 +142,7 @@ input::placeholder {
   .container {
     width: 100%;
     top: 20%;
+    z-index: -1;
   }
 
   .city-temp {
@@ -180,11 +180,13 @@ input::placeholder {
 
   .container {
     top: 20%;
+    z-index: -1;
   }
 
   .city-data {
     width: auto;
   }
+
   .container,
   .day-data {
     flex-direction: column;
