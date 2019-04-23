@@ -137,12 +137,12 @@ input::placeholder {
   body {
     background: url("./images/background-mobile.jpg") fixed;
     background-size: cover !important;
+    z-index: -1;
   }
 
   .container {
     width: 100%;
     top: 20%;
-    z-index: -1;
   }
 
   .city-temp {
@@ -170,6 +170,7 @@ input::placeholder {
   body {
     background: url("./images/background-mobile.jpg") fixed;
     background-size: cover !important;
+    z-index: -1;
   }
 
   input {
@@ -180,7 +181,6 @@ input::placeholder {
 
   .container {
     top: 20%;
-    z-index: -1;
   }
 
   .city-data {
