@@ -49,9 +49,13 @@ input::placeholder {
 }
 
 .container {
+  font-family: "Open Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -73,6 +77,8 @@ input::placeholder {
 }
 
 .city-name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
   font-size: 2.5rem;
   text-transform: uppercase;
   margin: 0 auto;
@@ -115,6 +121,8 @@ input::placeholder {
   width: 250px;
   height: 350px;
   position: relative;
+  -webkit-animation: appear 2s linear;
+          animation: appear 2s linear;
 }
 
 .day-date {
@@ -131,24 +139,41 @@ input::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
 .day-temp {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .day-condition {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 768px) {
   body {
     background: url("./images/background-mobile.jpg") fixed;
     background-size: cover !important;
-    z-index: -1;
   }
   .container {
     width: 100%;
@@ -180,7 +205,6 @@ input::placeholder {
   body {
     background: url("./images/background-mobile.jpg") fixed;
     background-size: cover !important;
-    z-index: -1;
   }
   input {
     float: none;

@@ -9,7 +9,9 @@ import moment from "moment";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      data: <Block cityName="Enter A City Name" when="" temp="0" />
+    };
   }
   // Search Handler
   searchChangeHandler(event) {
@@ -35,7 +37,7 @@ class App extends Component {
           <Block
             key={data.current.wind_mph}
             cityName={data.location.name}
-            when={moment(data.forecast.forecastday[0].date).format("dddd")}
+            when={moment(data.forecast.forecastday[0].date).calendar()}
             temp={data.current.temp_c}
             condition={data.current.condition.text}
           />
@@ -72,7 +74,6 @@ class App extends Component {
           placeholder=" &#xF002;   Search another city"
           onChange={this.searchChangeHandler.bind(this)}
         />
-
         <div className="container">
           <div className="city-data">{this.state.data}</div>
           <div className="day-data">{this.state.dayData}</div>
