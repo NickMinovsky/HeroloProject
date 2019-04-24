@@ -8,3 +8,7 @@ this version runs on React and using a Weather API provided by [Apixu](https://w
 
 the styling was done using SCSS preprocessor.
 Full responsivity on all mobile devices (including tablets).
+
+## Live Version
+
+Live working version: [Click Me] (https://heroloweather.herokuapp.com/)
